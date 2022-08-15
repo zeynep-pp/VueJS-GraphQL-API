@@ -6,6 +6,7 @@
       <div>User email: {{ user.email }}</div>
       <div>User code: {{ user.code}}</div>
       <div>User city: {{ user.city }}</div>
+      <div>User company name: {{ user.companyName}}</div>
     </div>
     <v-row class="justify-end">
     <router-link to="/orders" tag="button">orders</router-link>

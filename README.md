@@ -14,6 +14,7 @@ npm run serve
 ```
 npm run build
 ```
+npm install --save @vue/apollo-composable
 
 ### Run your tests
 ```
