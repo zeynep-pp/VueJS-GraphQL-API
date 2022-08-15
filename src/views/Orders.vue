@@ -6,7 +6,7 @@
     <tr>
       <th>Order Name</th>
       <th>Date</th>
-      <th>Currency</th>
+      <th>Total</th>
     </tr>
   </thead>
   <tbody>
@@ -15,7 +15,7 @@
       :key="orders.id">
       <td>{{ orders.orderName }}</td>
       <td>{{ orders.orderDate }}</td>
-      <td>{{ orders.currency }}</td>
+      <td>{{ orders.total }}</td>
     </tr>
   </tbody>
   </table>
