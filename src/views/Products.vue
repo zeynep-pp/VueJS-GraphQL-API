@@ -1,9 +1,24 @@
 <template>
   <div>
     <h2>Products</h2>
-    <div v-if="products">
-      <div>products: {{ products}}</div>
-    </div>
+      <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Barcode</th>
+      <th>Favorite</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      v-for="products in products.products"
+      :key="products.id">
+      <td>{{ products.description3 }}</td>
+      <td>{{ products.barcode1 }}</td>
+      <td>{{ products.isFavorites}}</td>
+    </tr>
+  </tbody>
+  </table>
   </div>
 </template>
 
@@ -13,7 +28,7 @@ import gql from 'graphql-tag'
 export default {
   data() {
     return {
-      products: null
+      products: [],
     }
   },
   apollo: {
