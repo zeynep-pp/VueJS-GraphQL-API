@@ -5,22 +5,16 @@
   <thead>
     <td>
       <th scope="col">Order Name</th>
-      
-      
-
- 
-
     </td>
     <td>
-<th scope="col">Date</th>
+    <th scope="col">Date</th>
     </td>
     <td>
-<th scope="col">Total</th>
+    <th scope="col">Total</th>
     </td>
-            <td>
-<th  colspan="2" class="table is-striped is-narrow is-hoverable is-fullwidth">Details</th>
-        </td>
-      
+    <td>
+    <th  colspan="2" class="table is-striped is-narrow is-hoverable is-fullwidth">Details</th>
+    </td> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link>
   </thead>
   <tbody>
