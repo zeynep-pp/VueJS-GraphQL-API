@@ -1,14 +1,27 @@
 <template>
   <div>
     <h2>Orders</h2>
-  <table class="table is-striped is-narrow is-hoverable is-fullwidth">
+  <b-table class="table is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
-    <tr>
-      <th>Order Name</th>
-      <th>Date</th>
-      <th>Total</th>
-      <th class="table is-striped is-narrow is-hoverable is-fullwidth">Details</th>
-    </tr>
+    <td>
+      <th scope="col">Order Name</th>
+      
+      
+
+ 
+
+    </td>
+    <td>
+<th scope="col">Date</th>
+    </td>
+    <td>
+<th scope="col">Total</th>
+    </td>
+            <td>
+<th  colspan="2" class="table is-striped is-narrow is-hoverable is-fullwidth">Details</th>
+        </td>
+      
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link>
   </thead>
   <tbody>
     <tr 
@@ -19,13 +32,7 @@
       <td>{{ orders.total }}</td>
       <td>
       <div>
-          <table class="table is-striped is-narrow is-hoverable is-fullwidth">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Price</th>
-          </tr>
-        </thead>
+          <b-table class="table is-striped is-narrow is-hoverable is-fullwidth"> 
         <tbody>
           <td>
             <tr
@@ -36,13 +43,13 @@
             </tr>
           </td>
         </tbody>
-        </table>
+        </b-table>
         </div>
         
       </td>
     </tr>
   </tbody>
-  </table>
+  </b-table>
  
 
   </div>
@@ -50,6 +57,7 @@
 
 <script>
 import gql from 'graphql-tag'
+
 
 export default {
   data() {
